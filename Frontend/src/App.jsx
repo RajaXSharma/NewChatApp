@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import Room from "./Components/Room";
 import Chat from "./Components/Chat";
 
-const socket = io("https://new-chat-app-api.vercel.app", { transports: ["websocket"] });
+const socket = io("https://new-chat-app-api.vercel.app");
 
 const App = () => {
   const [username, setUsername] = useState("");
